@@ -2,7 +2,23 @@
 
 namespace IntroToNUnit.Tests
 {
-    public class Class1
+    public enum TestTypes
     {
+        None,
+        UnitTesting,
+        IntegrationTesting,
+        SmokeTesting,
+        RegressionTesting,
+        PrayItWorksTesting
     }
+
+    [TestFixture]
+    public class EnumToStringConverterTests
+    {
+        [Test]
+        public void CanConvertEnumIntoMultipleWords()
+        {
+        }
+    }
+
 }
