@@ -18,6 +18,11 @@ namespace IntroToNUnit.Tests
         [Test]
         public void CanConvertEnumIntoMultipleWords()
         {
+            // Arrange/Act
+            var actual = TestTypes.UnitTesting.ToFriendlyString();
+
+            // Assert
+            Assert.That(actual, Is.EqualTo("Unit Testing"));
         }
     }
 
