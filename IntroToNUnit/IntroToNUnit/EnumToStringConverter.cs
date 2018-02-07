@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace IntroToNUnit
 {
-    /*
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-    */
     public static class EnumToStringConverter
     {
         public static string ToFriendlyString(this Enum value)
